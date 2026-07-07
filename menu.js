@@ -10,6 +10,7 @@ document.write('\
 	<li><a href="programme.html">Programme</a></li>\
 	<li><a href="accommodation.html">Accommodation</a></li>\
 	<li><a href="transport.html">Transport</a></li>\
+	<li><a href="students.html">Students</a></li>\
 	<li><a href="related.html">Other Events</a></li>\
 	<li><a href="visas.html">Visa Info</a></li>\
 	<li><a href="local.html">Local Info</a></li>\
