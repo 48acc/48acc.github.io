@@ -17,3 +17,16 @@ document.write('\
 </div>\
 \
 ');
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll("#navigate a").forEach(function (link) {
+    const linkedPage =
+      new URL(link.href).pathname.split("/").pop() || "index.html";
+
+    if (linkedPage === currentPage) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
+});

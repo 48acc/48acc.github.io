@@ -78,7 +78,7 @@ height: auto;
 text-decoration: none;
 color: #505050;
 display: block;
-padding: 5px 4px;
+padding: 6px 4px;
 white-space: nowrap;
 background: #f4f4f4;
 }	
@@ -394,4 +394,9 @@ dd {
     width: auto;
     margin-left: 0;
   }
+}
+
+#navigate li a[aria-current="page"] {
+  background: #eaeaea;
+  color: #286ea0;
 }
