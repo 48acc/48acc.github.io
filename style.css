@@ -49,41 +49,43 @@ border: 0;
 }
 
 #navigate {
-clear: left;
-float: left;
-width: 150px;
+clear: both;
+float: none;
+width: auto;
 margin: 0 0 10px 0;
 padding: 0;
 font-size: 0.9em;
 }
 
 #navigate ul {	
+display: flex;
+flex-wrap: wrap;
+gap: 2px;
 list-style: none;
-width: 150px;
-margin: 0 0 20px 0;
+width: auto;
+margin: 0;
 padding: 0;
-font-size: 1.1em;
+font-size: 1em;
 }	
 
 #navigate li {
-margin-bottom: 4px;
+margin: 0;
 }
 
 #navigate li a {
 font-weight: bold;
-height: 20px;
+height: auto;
 text-decoration: none;
 color: #505050;
 display: block;
-padding: 6px 0 0 10px;
+padding: 5px 4px;
+white-space: nowrap;
 background: #f4f4f4;
-border-left: 4px solid #cccccc;
 }	
 	
 #navigate li a:hover {
 background: #eaeaea;
 color: #286ea0;
-border-left: 4px solid #286ea0;
 }
 
 .announce {
@@ -210,8 +212,8 @@ background: #eaeaea; color: #ff5555;
 /* ----------------------------------------------------------------------------------- */
 
 #content {
-margin: 0 0px 20px 160px;
-border-left: 1px solid #f0f0f0;
+margin: 0 0 20px 0;
+border-left: 0;
 padding: 0 10px 0 10px;
 line-height: 1.6em;
 text-align: left;
@@ -323,4 +325,73 @@ dd {
   padding: 0;
   margin: 0
   /* adjust the width; make sure the total of both is 100% */
+}
+
+/* Phone and narrow-screen layout */
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 100%;
+  }
+
+  #wrap {
+    width: auto;
+    margin: 0 12px;
+  }
+
+  #header {
+    height: auto;
+  }
+
+  #header h2 {
+    margin: 0 0 12px;
+  }
+
+  #frontphoto {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #content {
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
+
+  #footer {
+    width: auto;
+  }
+
+  /* Larger areas for tapping; existing menu wrapping is retained */
+  #navigate li a {
+    box-sizing: border-box;
+    min-height: 0;
+    padding: 5px 4px;
+    white-space: normal;
+  }
+
+  #content img {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Sponsor logos */
+  #wrap > center img {
+    max-width: calc(100% - 20px);
+    object-fit: contain;
+  }
+
+  /* Older column layouts used elsewhere on the site */
+  #base-layer {
+    width: 100%;
+  }
+
+  #left-container,
+  #right-container,
+  #left-container-alt,
+  #right-container-alt {
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
 }
