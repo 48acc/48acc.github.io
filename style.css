@@ -65,7 +65,7 @@ list-style: none;
 width: auto;
 margin: 0;
 padding: 0;
-font-size: 1.2em;
+font-size: 1.3em;
 }	
 
 #navigate li {
@@ -78,7 +78,7 @@ height: auto;
 text-decoration: none;
 color: #505050;
 display: block;
-padding: 6px 2px;
+padding: 6px 3px;
 white-space: nowrap;
 background: #f4f4f4;
 }	

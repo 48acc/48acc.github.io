@@ -11,8 +11,7 @@ document.write('\
 	<li><a href="students.html">Students</a></li>\
 	<li><a href="info.html">Information</a></li>\
 	<li><a href="melbourne.html">Melbourne</a></li>\
-	<li><a href="organisers.html">Organisers</a></li>\
-	<li><a href="registration.html">Registration</a></li>\
+	<li><a href="organisers.html">Organisation</a></li>\
 </ul>\
 </div>\
 \
