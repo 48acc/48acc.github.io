@@ -17,7 +17,7 @@ font: 76% Verdana,Tahoma,Arial,sans-serif;
 background: #ffffff;
 color: #303030;
 margin: 0 auto;
-width: 760px;
+width: 850px;
 }
 
 #header {
@@ -65,7 +65,7 @@ list-style: none;
 width: auto;
 margin: 0;
 padding: 0;
-font-size: 1em;
+font-size: 1.2em;
 }	
 
 #navigate li {
@@ -78,7 +78,7 @@ height: auto;
 text-decoration: none;
 color: #505050;
 display: block;
-padding: 6px 4px;
+padding: 6px 2px;
 white-space: nowrap;
 background: #f4f4f4;
 }	
@@ -255,7 +255,7 @@ clear: both;
 margin: 0 auto;
 padding: 10px 0 20px 0;
 border-top: 4px solid #f0f0f0;
-width: 760px;
+width: 850px;
 text-align: center;
 color: #808080;
 font-size: 0.9em;
@@ -328,7 +328,7 @@ dd {
 }
 
 /* Phone and narrow-screen layout */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 850px) {
   body {
     font-size: 100%;
   }
